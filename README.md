@@ -15,7 +15,7 @@ Curso react
 
 # Error
 
-No se puede cargar el archivo C:\Program Files\nodejs\npx.ps1 porque la ejecución de scripts está deshabilitada en este sistema.
+1- No se puede cargar el archivo C:\Program Files\nodejs\npx.ps1 porque la ejecución de scripts está deshabilitada en este sistema.
 
 Solución rápida: Cambiar la política de ejecución
 
@@ -39,3 +39,6 @@ Verifica que se aplicó correctamente:
 Intenta nuevamente crear tu proyecto:
 
 - npx create-react-app mi-proyecto
+
+
+2- En caso de que no aparezca la carpetanode-modules toca descargalar con el comando "npm install"
