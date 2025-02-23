@@ -41,4 +41,4 @@ Intenta nuevamente crear tu proyecto:
 - npx create-react-app mi-proyecto
 
 
-2- En caso de que no aparezca la carpetanode-modules toca descargalar con el comando "npm install"
+2- En caso de que no aparezca la carpeta "node-modules" toca descargalar con el comando "npm install".
