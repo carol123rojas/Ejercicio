@@ -12,3 +12,30 @@ Curso react
     - git pull (Descarga los cambios más recientes del repositorio remoto y los fusiona con tu rama actual).
     - git fetch (Descarga los cambios del repositorio remoto pero no los fusiona automáticamente).
 
+
+# Error
+
+No se puede cargar el archivo C:\Program Files\nodejs\npx.ps1 porque la ejecución de scripts está deshabilitada en este sistema.
+
+Solución rápida: Cambiar la política de ejecución
+
+Abre PowerShell como administrador:
+
+- Haz clic derecho en el ícono de PowerShel
+- Selecciona "Ejecutar como administrador".
+
+Permite la ejecución de scripts con este comando:
+
+- Set-ExecutionPolicy RemoteSigned
+
+Confirma el cambio:
+
+- Te pedirá una confirmación. Escribe Y y presiona Enter.
+
+Verifica que se aplicó correctamente:
+
+- Get-ExecutionPolicy
+ 
+Intenta nuevamente crear tu proyecto:
+
+- npx create-react-app mi-proyecto
