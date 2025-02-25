@@ -1,25 +1,68 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function Appcomponente() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <div className="container">
+        <h1>Bienvenido a nuestro menú</h1>
+        <div className="content">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+        <div className="content">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+        <div className="content">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      </div>
+      <div className="container">
+        <Form />
+      </div>
     </div>
   );
 }
 
-export default App;
+const title = <h2>Nombre de la bebida</h2>;
+const precio = <p>Precio</p>;
+const text = <p>Descripción</p>;
+const boton = <button type="button">añadir a carrito</button>;
+
+function Card(title) {
+  return (
+    <section className="info-menu">
+      <div className="card">
+        <div className="content-img">
+          <p>imagen</p>
+        </div>
+        {title}
+        {precio}
+        {text}
+        {boton}
+      </div>
+    </section>
+  );
+}
+
+function Form() {
+  return (
+    <section className="registro">
+      <h2>Regristo</h2>
+      <form>
+        <input type="text" name="Nombre" id="" />
+        <input type="text" name="2 Nombre" id="" />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  );
+}
+
+export default Appcomponente;
